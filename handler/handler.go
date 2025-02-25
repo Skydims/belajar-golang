@@ -18,7 +18,7 @@ func HomeHandler(w http.ResponseWriter, r *http.Request) {
 	tmpl, err := template.ParseFiles(path.Join("html", "index.html"))
 	if err != nil {
 		log.Println(err)
-		http.Error(w, "lagi ada error bero ", http.StatusInternalServerError)
+		http.Error(w, "lagi ada error beroo ", http.StatusInternalServerError)
 		return
 	}
 
